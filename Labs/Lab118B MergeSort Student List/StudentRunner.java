@@ -146,6 +146,8 @@ public class StudentRunner
         System.out.println ("5. Print list of students"); 
         System.out.println ("6. Print one student"); 
         System.out.println ("7. End the program"); 
+        System.out.println("8. Sort list by Student Number");
+        System.out.println("9. Search list by Student Number");
         int input  = scr.nextInt(); 
         return input;  
 

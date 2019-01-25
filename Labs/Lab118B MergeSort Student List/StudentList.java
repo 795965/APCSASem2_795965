@@ -101,5 +101,52 @@ public class StudentList {
         }
         return count;
     }
+    public void sortList(){
+    }
+         public void mergeSort(ArrayList<Student> a, int n){ // uses merge sort
+        if (n < 2){
+            return;
+        } // base case
+        int mid = n/2;
+        ArrayList<Student> l = new ArrayList<Student>(); // one half of array
+        ArrayList<Student> r = new ArrayList<Student>(); // other half of array
+        for(int i = 0; i < mid; i++){
+            l.add(a.get(i)); // initializes array
+        }
+        for(int i = mid; i < n; i++){
+            r.add(a.get(i)); // initializes array
+        }
+        
+        // recursive part
+        mergeSort(l, mid);
+        mergeSort(r, n - mid);
+        // to merge the smaller arrays
+        merge(a, l, r, mid, n - mid);
+    }
+    
+    public void merge(ArrayList<Student> a, ArrayList<Student> l, ArrayList<Student> r, int left, int right){
+        // merge method for merge sort
+        // instance variables to keep track of index within array
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        while(i < left && j < right){
+            // runs through array until reaching the end (middle)
+            if(l.get(i).getstuNumber() <= r.get(j).getstuNumber()){
+                a.set(k++, l.get(i++)); // adds the left value to the array
+            } else {
+                a.set(k++, r.get(j++)); // adds the right value to the array
+            }
+        }
+        while(i < left) {
+            a.set(k++, l.get(i++)); // incrementation
+        }
+        while(j < right) {
+            a.set(k++, r.get(j++)); // incrementation
+        }
+    }
+    
+   
 }
+
 

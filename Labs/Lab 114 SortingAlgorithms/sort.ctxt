@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=sort
-comment0.text=\n\ Bubble,\ Insert,\ Select\ and\ MySort\ -\ Arrays\n\ with\ Metrics\n\ @Ziggy\ Sheynin\n\ @Lab\ 114\ \n
+comment0.text=\r\n\ Bubble,\ Insert,\ Select\ and\ MySort\ -\ Arrays\r\n\ with\ Metrics\r\n\ @Ziggy\ Sheynin\r\n\ @Lab\ 114\ \r\n
 comment1.params=
 comment1.target=void\ mySort()
 comment2.params=
