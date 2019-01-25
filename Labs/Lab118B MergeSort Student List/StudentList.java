@@ -101,7 +101,14 @@ public class StudentList {
         }
         return count;
     }
-    public void sortList(){
+     public void sortList() {
+        if(studList.size() == 0) {
+            System.out.print("Your list has no students");
+        } else {
+            mergeSort(studList, studList.size());
+            System.out.println("Students sorted by student number: ");
+            printStudentList();
+        }
     }
          public void mergeSort(ArrayList<Student> a, int n){ // uses merge sort
         if (n < 2){

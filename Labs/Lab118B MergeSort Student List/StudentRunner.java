@@ -128,7 +128,10 @@ public class StudentRunner
                     tryAgain();
                 }
                 System.out.println();
-            } else {
+            } else if(demand == 8){
+                StudentList.sortList();
+                System.out.println();
+            }else {
                 tryAgain();
             } 
             tryAgain();
