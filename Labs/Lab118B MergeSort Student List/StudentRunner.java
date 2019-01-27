@@ -131,6 +131,12 @@ public class StudentRunner
             } else if(demand == 8){
                 StudentList.sortList();
                 System.out.println();
+            }else if(demand == 9)
+            {Scanner command9 = new Scanner(System.in);
+                System.out.print("What student number would you like to search for? ");
+                int number = command9.nextInt();
+                StudentList.callBinarySearch(number); // calls the binarySort method
+                System.out.println();
             }else {
                 tryAgain();
             } 

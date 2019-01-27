@@ -153,8 +153,28 @@ public class StudentList {
         }
     }
     
-    public void searchList(){
-        
+     public void callBinarySearch(int n) {
+        if(studList.size() == 0) {
+            System.out.print("Your list has no students in it!");
+        } else {
+            mergeSort(studList, studList.size());
+            binarySearch(studList, n, 0, studList.size());
+        }
+    }
+    
+    public void binarySearch(ArrayList<Student> a, int n, int start, int end) {
+        int index = (end-start)/2;
+        if(a.get(index).getstuNumber() == n){
+            System.out.println();
+            System.out.println("The student number " + n + " is:");
+            System.out.println("Name: " + studList.get(index).getfullName() + ", Student Number: " + n + ", GPA: " + studList.get(index).getgpa());
+            return;
+        }
+        if(a.get(index).getstuNumber() < n){
+            binarySearch(a, n, index, end);
+        } else {
+            binarySearch(a, n, 0, index);
+        }
     }
 }
 
