@@ -1,35 +1,29 @@
 
 /**
- * Write a description of class CanvasComponent here.
+ * Displying a Simple Shape
  *
- * @author (your name)
+ * @author (Ziggy Sheynin)
  * @version (a version number or a date)
  */
 import java.awt.*;
 import javax.swing.*;
 public class CanvasComponent extends JComponent
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class CanvasComponent
-     */
-    public CanvasComponent()
-    {
-        // initialise instance variables
-        x = 0;
+    CanvasComponent rect = new CanvasComponent(0,0);
+    int height;
+    int width;
+    int x;
+    int y;
+    public CanvasComponent(int width, int height){
+        rect.setSize(width, height);
+        height = 20;
+        width = 40;
+        x = 200;
+        y = 400;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public void paintComponent(Graphics g){
+        g.setColor(Color.red);
+        g.fillRect(40, 20, 200, 400);
     }
 }
