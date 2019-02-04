@@ -9,11 +9,12 @@ import javax.swing.*;
 
 public class MySwingApplication implements Runnable
 {
-    JFrame jFrame;
+    
     public void run(){
-        JFrame jFrame = new JFrame();
+        JFrame jFrame = new JFrame("window");
         jFrame.setSize(500, 762);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setVisible(true);
     }
     
     public void main(){
