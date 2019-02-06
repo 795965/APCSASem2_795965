@@ -13,9 +13,9 @@ public class MySwingApplication implements Runnable
     public void run(){
         JFrame jFrame = new JFrame("window");
         jFrame.setSize(500, 762);
-        CanvasComponent canvasComponent = new CanvasComponent(40, 20);
-        jFrame.add(canvasComponent);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        CanvasComponent canvasComponent = new CanvasComponent(40, 30);
+        jFrame.add(canvasComponent);
         jFrame.setVisible(true);
     }
     

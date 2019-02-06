@@ -9,13 +9,13 @@ import java.awt.*;
 import javax.swing.*;
 public class CanvasComponent extends JComponent
 {
-    CanvasComponent rect = new CanvasComponent(0,0);
+
     int height;
     int width;
     int x;
     int y;
     public CanvasComponent(int width, int height){
-        rect.setSize(width, height);
+        setSize(width, height);
         height = 20;
         width = 40;
         x = 200;
@@ -24,6 +24,6 @@ public class CanvasComponent extends JComponent
     
     public void paintComponent(Graphics g){
         g.setColor(Color.red);
-        g.fillRect(40, 20, 200, 400);
+        g.fillRect(40, 30, 200, 400);
     }
 }
