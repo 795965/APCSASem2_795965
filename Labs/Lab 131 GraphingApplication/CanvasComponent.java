@@ -43,10 +43,14 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     }
 
     public void paintComponent(Graphics g){
-        g.setColor(Color.red);
-        g.fillRect(rectX, rectY, rectWidth, rectHeight);
+
         if(InShape == true){
             g.setColor(Color.blue);
+            g.fillRect(rectX, rectY, rectWidth, rectHeight);
+        }
+
+        else {
+            g.setColor(Color.red);
             g.fillRect(rectX, rectY, rectWidth, rectHeight);
         }
 
@@ -73,6 +77,7 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
             repaint();
 
         }
+        
     }
 
     public void mousePressed(MouseEvent e){
