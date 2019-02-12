@@ -26,8 +26,11 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     int gutterY = 10;
     Timer animationTimer;
     int motionSpeed = 1;
+    int ClickedX;
+    int ClickedY;
+    boolean OutofShape;
+    boolean InShape;
     public CanvasComponent(int width, int height){
-
         setSize(width, height);
         rectHeight = 20;
         rectWidth = 40;
@@ -42,11 +45,34 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     public void paintComponent(Graphics g){
         g.setColor(Color.red);
         g.fillRect(rectX, rectY, rectWidth, rectHeight);
+        if(InShape == true){
+            g.setColor(Color.blue);
+            g.fillRect(rectX, rectY, rectWidth, rectHeight);
+        }
+
     }
 
     //MouseListener Methods
     public void mouseClicked(MouseEvent e){
         //This method is called by Swing when a mouse button is pressed and released.
+        if(mouseFromX > rectX && mouseFromX < rectX + rectWidth &&
+        mouseFromY > rectY && mouseFromY < rectY + rectHeight){
+            InShape = true;
+        }  else {
+            InShape = false;
+        }
+        if(InShape = true){
+            mouseToX = e.getX();
+            mouseToY = e.getY();
+
+            rectX = rectX +(mouseToX - mouseFromX);
+            rectY = rectY + (mouseToY - mouseFromY);
+
+            mouseFromX = mouseToX;
+            mouseFromY = mouseToY;
+            repaint();
+
+        }
     }
 
     public void mousePressed(MouseEvent e){
@@ -64,6 +90,18 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
 
     public void mouseReleased(MouseEvent e){
         //This method is called by Swing when a mouse button is released.
+        if(OutofShape == true){
+            mouseToX = e.getX();
+            mouseToY = e.getY();
+
+            rectX = rectX +(mouseToX - mouseFromX);
+            rectY = rectY + (mouseToY - mouseFromY);
+
+            mouseFromX = mouseToX;
+            mouseFromY = mouseToY;
+            repaint();
+
+        }
     }
 
     public void mouseEntered(MouseEvent e){
@@ -97,6 +135,15 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     public void mouseMoved(MouseEvent e){
         //This method is called by Swing when the mouse is moved without any button
         //depressed.
+        mouseFromX = e.getX();
+        mouseFromY = e.getY();
+        if(mouseFromX > rectX && mouseFromX < rectX + rectWidth &&
+        mouseFromY > rectY && mouseFromY < rectY + rectHeight){
+            OutofShape = false;
+        }  else {
+            OutofShape = true;
+        }
+
     }
 
     public void actionPerformed(ActionEvent e){
