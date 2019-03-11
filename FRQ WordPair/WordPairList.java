@@ -22,8 +22,9 @@ public class WordPairList
     
     public int numMatches(){
         int numMatches = 0; //counter
-        for(int i = 0; i < allPairs.size(); i++){ //traverses array
-            if(allPairs.getFirst().equals(allPairs.getSecond())){ //if the two words are the same
+        for(int i = 0; i < allPairs.size(); i++){ 
+            WordPair pair = allPairs.get(i);//traverses array
+            if(pair.getFirst().equals(pair.getSecond())){ //if the two words are the same
                 numMatches++; //counter adds one
             }
         }
