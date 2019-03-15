@@ -225,10 +225,10 @@ public class SortRunner
             int length = lengthArray[lengthIndex];
             SelectionSorter selectionSorter = new SelectionSorter();
             selectionSorterArray[lengthIndex] = runStandardSorts(selectionSorter, length, "Selection sort");
-            //             InsertionSorter insertionSorter = new InsertionSorter();
-            //             insertionSorterArray[lengthIndex] = runStandardSorts(insertionSorter, length, "Insertion sort");
-            //             MergeSorter mergeSorter = new MergeSorter();
-            //             mergeSorterArray[lengthIndex] = runStandardSorts(mergeSorter, length, "Merge sort");
+                        InsertSorter insertionSorter = new InsertSorter();
+                        insertionSorterArray[lengthIndex] = runStandardSorts(insertionSorter, length, "Insertion sort");
+                        MergeSorter mergeSorter = new MergeSorter();
+                        mergeSorterArray[lengthIndex] = runStandardSorts(mergeSorter, length, "Merge sort");
             //             HeapSorter heapSorter = new HeapSorter();
             //             heapSorterArray[lengthIndex] = runStandardSorts(heapSorter, length, "Heap sort");
             QuickSorter quickSorter = new QuickSorter();
