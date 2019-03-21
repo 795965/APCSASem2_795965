@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class StringCoder here.
+ * FRQ 2008 Question 2
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Ziggy Sheynin)
+ * @version (3/20/19)
  */
 
 import java.util.*;
@@ -33,8 +33,11 @@ public class StringCoder
         // * @return the string obtained by concatenating the parts of the master string
         String word = "";
         for(int i = 0; i < parts.size(); i++){
-            int end = 
+            int end = nextPart.getStart()+nextPart.getLength();
+            word += masterString.substring(nextPart.getStart(), end);
         } 
+        return word;
+        
     }
     /** @param str the string to encode using the master string
      * Precondition: all of the characters in str appear in the master string;
@@ -52,7 +55,17 @@ public class StringCoder
      * to create word
      */
     public ArrayList<StringPart> encodeString(String word)
-    { /* to be implemented in part (b) */ }
+    { /* to be implemented in part (b) */ 
+        ArrayList<StringPart> parts = new ArrayList<StringPart>();
+        while(word.length() >0 ){
+            StringPart nextPart = findPart(word);
+            parts.add(nextPart);
+            word = word.substring(nextPart.getLength());
+        }
+        return parts;
+        
+        }
+    }
     // There may be instance variables, constructors, and methods that are not shown.
-} 
-}
+
+
