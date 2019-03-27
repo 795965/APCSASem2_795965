@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=HeartToMouth
+comment0.text=\n\ Abstract\ class\ HeartToMouth\ -\ write\ a\ description\ of\ the\ class\ here\n\n\ @author\ (your\ name\ here)\n\ @version\ (version\ number\ or\ date\ here)\n
+comment1.params=name
+comment1.target=HeartToMouth(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ FAME\n
+comment2.params=
+comment2.target=java.lang.String\ AlbumName()
+comment3.params=
+comment3.target=java.lang.String\ songs()
+comment4.params=
+comment4.target=void\ main()
+numComments=5
