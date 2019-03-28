@@ -9,23 +9,22 @@ public abstract class FAME implements Album
 {
     
     private  String AlbumName;
-    private String songs;
+    private int songs;
     
 
     /**
      * Constructor for objects of class FAME
      */
-    public FAME(String name)
+    public FAME()
     {
-        AlbumName = name;
+        AlbumName = "F.A.M.E";
+        songs = 11;
     }
 
-    public  String AlbumName(){
-        AlbumName = "F.A.M.E.";
+    public String getAlbum(){
         return AlbumName;
     }
-    public String songs(){
-        songs = "Mi Declaracion, Feliz los 4, Delincuente";
+    public int getSongs(){
         return songs;
     }
     

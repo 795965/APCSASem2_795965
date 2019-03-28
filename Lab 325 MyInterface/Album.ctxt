@@ -2,10 +2,8 @@
 comment0.target=Album
 comment0.text=\n\ 2\ abstract\ methods\ that\ define\ are\ defined\ in\ each\ album\n\n\ @author\ (Ziggy\ Sheynin)\n\ @version\ (Lab\ 325)\n
 comment1.params=
-comment1.target=java.lang.String\ AlbumName()
+comment1.target=int\ getSongs()
 comment1.text=\n\nCreate\ your\ own\ interface\ with\ at\ least\ two\ abstract\ methods\nCreate\ two\ classes\ the\ implement\ your\ interface.\nThese\ two\ classes\ must\ define\ each\ of\ your\ abstract\ methods\ differently\nCreate\ an\ ArrayList\ that\ contains\ objects\ of\ the\ interface\ type\ (For\ instance,\ if\ you\ create\ an\ Animal\ interface,\ your\ objects\ should\ be\ of\ type\ animal)\nSort\ the\ Array\ List\ using\ one\ of\ the\ algorithms\ we\ used\ in\ this\ class\ (Insertion,\ Select,\ Merge,\ or\ Bubble).\n\n\ @param\ \ y\ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ the\ result\ produced\ by\ sampleMethod\n
 comment2.params=
-comment2.target=java.lang.String\ songs()
-comment3.params=
-comment3.target=double\ songlength()
-numComments=4
+comment2.target=java.lang.String\ getAlbum()
+numComments=3

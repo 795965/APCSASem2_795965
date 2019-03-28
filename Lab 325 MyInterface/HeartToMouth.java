@@ -9,23 +9,22 @@ public abstract class HeartToMouth implements Album
 {
     
     private  String AlbumName;
-    private String songs;
+    private int songs;
     
 
     /**
      * Constructor for objects of class FAME
      */
-    public HeartToMouth(String name)
+    public HeartToMouth()
     {
-        AlbumName = name;
+        AlbumName = "Heart to Mouth";
+        songs = 12;
     }
 
-    public  String AlbumName(){
-        AlbumName = "Heart To Mouth";
+    public String getAlbum(){
         return AlbumName;
     }
-    public String songs(){
-        songs = "Dreamer, Girls Go Wild, Die for You";
+    public int getSongs(){
         return songs;
     }
     

@@ -18,7 +18,10 @@ public interface Album
      * @param  y a sample parameter for a method
      * @return   the result produced by sampleMethod
      */
-    public String AlbumName ();
-    public String songs();
+        // General getters and setters (NOT defined differently)
+    int getSongs(); // returns the number of songs
     
+    String getAlbum(); // returns the ALbum name
+   
 }
+
