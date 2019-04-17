@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GridTester
+comment0.text=\n\ The\ GridTester\ class\:\n\ Create\ a\ constructor\ function\ that\ has\ parameters\ for\ number\ of\ rows\ \n\ and\ number\ of\ columns\ for\ a\ 2D\ array\ of\ Cell\ objects.\n\ Create\ a\ 2D\ array\ of\ Cell\ objects\ with\ the\ number\ of\ rows\ \n\ and\ columns\ specified\ by\ the\ input\ parameters.\n\ Write\ a\ GridTester\ \ method\ \:\ \n\ \ \ \ \ \ \ public\ void\ loadOccupied()\ \n\ \ \ \ \ \ \ that\ will\ randomly\ set\ 30%\ of\ the\ cell's\ \n\ \ \ \ \ \ \ occupied\ property\ to\ true\ and\ the\ rest\ to\ false;\n\n\ @author\ (Ziggy\ Sheynin)\n\ @version\ (4/15)\n
+comment1.params=row\ col
+comment1.target=GridTester(int,\ int)
+numComments=2
