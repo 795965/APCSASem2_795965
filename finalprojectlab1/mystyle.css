@@ -1,0 +1,46 @@
+body {
+    background-color: indianred;
+    font-family: "Times New Roman";
+    color: darkred;
+    text-align: center;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: bold;
+}
+h3{
+    color: darkslateblue;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2{
+    color: darkred;
+    text-align: center;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: bold;
+}
+p {
+    color: lightskyblue;
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    font-weight: normal;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+
